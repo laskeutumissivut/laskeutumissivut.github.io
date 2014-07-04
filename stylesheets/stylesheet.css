@@ -1,5 +1,5 @@
 body {
-  font-size: 21px;
+  font-size: 20px;
   background-color: rgb(253, 253, 253);
 }
 
@@ -78,13 +78,18 @@ a, .oomph, h2 {
   padding-top: 40px;
 }
 
-#pricing {
+#prices th.active {
+  background-color: #ffcd01;
   color: white;
-  background-color: #37abc8;
 }
 
-#pricing h2 {
-  color: inherit;
+#prices td.active {
+  color: #ffcd01;
+  background-color: transparent;
+}
+
+td.price {
+  font-size: 22px;
 }
 
 footer {
