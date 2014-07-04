@@ -3,72 +3,125 @@ body {
   background-color: rgb(253, 253, 253);
 }
 
-h1, .h1 { font-size: 63px;}
+h1, .h1 { font-size: 63px; }
 h2, .h2 { font-size: 46px; }
 h3, .h3 { font-size: 29px; }
 h4, .h4 { font-size: 24px; }
 
 #top-menu {
   margin-bottom: 0;
+  background: #37abc8;
+  border-bottom: 1px solid #3097b0;
 }
 
-#top-menu .navbar-brand {
+#top-menu .navbar-brand, #top-menu a {
   font-size: 20px;
+  color: white;
+  font-weight: bold;
 }
 
-#top-menu .navbar-nav > li > a {
+#top-menu a {
   font-size: 16px;
-  color: rgb(200, 200, 200);
 }
 
-@media (max-width: 480px) {
-  #top-menu .nav.navbar-nav {
-    margin: 0;
-  }
-  #top-menu .navbar-brand {
-    font-size: 14px;
-    line-height: 14px;
-    height: 40px;
-  }
-  #top-menu .navbar-nav > li > a {
-    font-size: 12px;
-    line-height: 12px;
-    padding: 6px;
-  }
-}
-
-section {
-  padding: 20px 0;
-  border-top: 1px solid #E6E6E6;
+#top-menu a:hover, #top-menu a:focus {
+  background-color: #3097b0;
 }
 
 section:nth-child(even) {
   background-color: rgb(253, 253, 253);
 }
 
-a, .oomph {
+a, .oomph, h2 {
   color: #37abc8;
 }
 
 .btn-success {
   background-color: #37abc8;
+  border-color: #3097b0;
 }
 
-.btn-success:hover {
+.btn-success:hover, .btn-success:active, .btn-success:focus {
   background-color: #3097b0;
   border-color: #3097b0;
 }
 
 #start {
-  background-color: #37abc8;
-  text-align: center;
+  background: url("/images/choppa.png") no-repeat scroll 0 100% / cover transparent;
   color: rgb(240, 240, 240);
+  padding: 0;
 }
 
 #start h1 {
   text-shadow: 1px 1px 2px gray;
+  margin-bottom: 20px;
+  font-size: 100px;
 }
 
 #start h2 {
   font-size: 24px;
+  color: inherit;
+}
+
+.background-filter {
+  background-color: rgba(55, 171, 200, 0.7);
+  padding: 60px 0;
+}
+
+#start .btn-success {
+  background-color: rgb(50, 50, 50);
+  border-color: rgba(255,255,255,0.1);
+  color: white;
+}
+
+#copy {
+  padding-top: 40px;
+}
+
+#pricing {
+  color: white;
+  background-color: #37abc8;
+}
+
+#pricing h2 {
+  color: inherit;
+}
+
+footer {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  padding: 40px 0 20px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover, footer a:focus {
+  color: inherit;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  #top-menu .nav.navbar-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  #start h1 {
+    font-size: 63px;
+  }
+  
+  .background-filter {
+    padding: 40px 0;
+  }
 }

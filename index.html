@@ -7,7 +7,7 @@
     <meta name="description" content="laskeutumissivut.fi : luo laskeutumissivu ja varmistu ideasi kannattavuudesta." />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <title>laskeutumissivut.fi - testaa ideasi kannattavuus nyt</title>
+    <title>laskeutumissivut.fi - testaa ideasi laskeutumissivulla</title>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -25,58 +25,84 @@
         <a class="navbar-brand" href="../">laskeutumissivut.fi</a>
       </div>
       <nav role="navigation">
-        <ul class="nav navbar-nav">
-          <li><a onclick="_gaq.push(['_trackEvent', 'Navbar', 'Top menu links', 'home']);" href="#start">Alku</a></li>
+        <button style="display: none" type="button" class="btn btn-default navbar-btn navbar-right">Kirjaudu sisään</button>
+        <ul class="nav navbar-nav navbar-right">
           <li><a onclick="_gaq.push(['_trackEvent', 'Navbar', 'Top menu links', 'tour']);" href="#tour">Esittely</a></li>
           <li><a onclick="_gaq.push(['_trackEvent', 'Navbar', 'Top menu links', 'pricing']);" href="#pricing">Hinnoittelu</a></li>
         </ul>
       </nav>
     </div></header>
-    <section id="start"><div class="container">
-      <h1><b>Laskeutumissivu kävijäseurannalla minuutissa</b></h1>
-      <h2><b>Testaa ideasi kannattavuus</b> ennen enempää tuotekehitystä.<br>
-      Säästä <b>tuhansia euroja</b> ja lukemattomia <b>kuukausia</b></h1>
-    </div></section>
+    <section id="start"><div class="background-filter"><div class="container">
+      <h1><b>Laskeutumis&shy;sivu minuutissa</b></h1>
+      <h2>Testaa ideasi kannattavuus ennen enempää tuotekehitystä.<br>
+      Säästä tuhansia euroja ja lukemattomia kuukausia</h2><br>
+      <a class="btn btn-success btn-lg" href="#sign-up" onclick="_gaq.push(['_trackEvent', 'start', 'CTA', 'sign-up']);">Luo sivu</a>
+    </div></div></section>
     <section id="copy"><div class="container">
-      <p>Pelkäätkö haaskaavasi aikaa turhan tuotteen rakentamisessa?
-      
-      Jos myyntipuheesi jättää kävijäsi kylmäksi, <em>tuotteellasi tai palvelullasi ei ole väliä</em>,
-      sillä kävijäsi eivät tule edes kokeilemaan sitä.
-      Myyntipuhe kannattaa siis hio täydelliseksi nyt.<br>
+      <p>Pelkäätkö haaskaavasi aikaa ja rahaa turhan tuotteen tai palvelun rakentamisessa?<br>
+      Entä jos kukaan ei ostakaan tuotettasi sen viimein valmistuttua?<br>
+      Mistä tiedät, oletko ratkaissut olemattoman ongelman, vai ovatko tuotteesi ominaisuudet vajavaisia, vai onko vika kenties myyntipuheessasi?
+      ...
+      Kuten varmastikin olet jo huomannut, uuden tuotteen tuomisessa markkinoille on paljon riskejä.
+      Ketteränä tuotekehittäjänä olet varmastikin myös tietoinen siitä, että  
+      hyvä tapa riskien vähentämiseen on myyntipuheesi testaaminen potentiaalisilla asiakkaillasi jo ennen tuotteen valmistumista.
+      Perinteisesti tämä on tapahtunut markkinakyselyin, mutta tiedätkö mitä?
+      Ihmiset vastaavat kyselyihin mitä haluavat, mutta toimivat tosipaikan tullen täysin eri tavoin.
+      He haluavat olla sinulle mieliksi, tai kenties kuvittelevat itsensä käyttävänsä tuotettasi jossakin ideaalissa universumissa.
+      Teot ja pätäkkä kuitenkin paljastavat karun totuuden.
+
+      Jos siis myyntipuheesi jättää kävijäsi kylmäksi, <em>tuotteellasi tai palvelullasi ei ole väliä</em>,
+      sillä kävijäsi eivät tule koskaan edes kokeilemaan sitä.
+      Hio siis myyntipuheesi täydelliseksi nyt ja testaa värähtääkö asiakkaidesi viisari tarpeeksi<br>
       Mistä tiedät, mikä toimii ja mikä ei?<br>
-      <b>Testaamalla. Me teemme sen helpoksi.</b>
+      <a href="#tour">Testaamalla. Etkö osaa? <b>Kohta osaat.</b></a>
       </p>
     </div></section>
     <section id="tour"><div class="container">
-      <h2>Toimi näin</h2>
+      <h2>Näin testaat ideasi</h2>
       <ul>
         <li>1. Kirjoita myyntipuheesi</li>
         <li>2. Kirjoita ja osta Google Adsit, joilla tuot kävijöitä sivullesi</li>
         <li>3. Mittaa helpon analytiikkamme avulla mikä toimii ja mikä ei</li>
-        <li>4. Lisää vaihtoehtoisia myyntipuheita, jotta voit verrata mikä toimii ja mikä ei</li>
+        <li>4. Toista kohtia 1 - 3, kunnes jokin myyntipuheistasi toimii</li>
         <li>Voit myös lisätä kuvia tuotteestasi ja valita sivuille brändisi mukaiset värit, sekä lisätä sivuille kokonaan oma tyyli</li>
       </ul>
     </div></section>
     <section id="pricing"><div class="container">
       <h2>Hinnoittelu</h2>
+      <table class="table">
+      </table>
     </div></section>
     <section id="sign-up"><div class="container">
       <h2>Kuulostaako hyvältä?</h2>
-      <p>Liity sähköpostilistallemme, niin tiedät kun olemme valmiita.</p>
-      <form action="//laskeutumissivut.us8.list-manage.com/subscribe/post?u=89d0498f65d8b66115c8f571f&amp;id=26bb943237" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate col-md-4" target="_blank" novalidate>
-        <div class="input-group input-group-lg">
+      <p>Anna sähköpostiosoitteesi, niin ilmoitamme kun olemme valmiita<a href="#nudge-nudge-wink-wink">*</a></p>
+      <form action="//laskeutumissivut.us8.list-manage.com/subscribe/post?u=89d0498f65d8b66115c8f571f&amp;id=26bb943237" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div class="input-group input-group-lg col-md-5">
           <label for="mce-EMAIL" class="sr-only">Sähköpostiosoite</label>
           <div id="mce-responses" class="clear">
             <div class="response" id="mce-error-response" style="display:none"></div>
             <div class="response" id="mce-success-response" style="display:none"></div>
           </div>
           <div style="position: absolute; left: -5000px;"><input type="text" name="b_89d0498f65d8b66115c8f571f_26bb943237" tabindex="-1" value=""></div>
-          <input type="email" value="" placeholder="mailisi@mail.fi" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+          <input type="email" value="" placeholder="sähköposti" name="EMAIL" class="required email form-control" id="mce-EMAIL">
           <div class="input-group-btn">
-            <input type="submit" value="Liity!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
+            <input type="submit" value="Muistuta minua" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
           </div>
         </div>
       </form>
+      <br>
+      <p id="nudge-nudge-wink-wink" class="help-block">Arvasit oikein, sovellamme omia neuvojamme omaan tuotteeseemme!</p>
     </div></section>
+    <footer id="bottom-menu"><div class="container">
+      <nav role="navigation">
+        <button style="display: none" type="button" class="btn btn-default navbar-btn">Kirjaudu sisään</button>
+        <ul>
+          <li style="display: none" ><a href="#" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Bottom menu links', 'faq']);">Usein kysytyt kysymykset</a></li>
+          <li><a href="#sign-up" onclick="_gaq.push(['_trackEvent', 'bottom-menu', 'CTA', 'sign-up']);">Luo laskeutumissivu</a></li>
+        </ul>
+      </nav>
+      <br>
+      <h5 class="copyright">&copy; 2014 <a href="http://bittinosturi.fi">Bittinosturi Oy</a></h5>
+    </div></footer>
   </body>
 </html>
