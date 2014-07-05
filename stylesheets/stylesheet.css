@@ -39,11 +39,16 @@ a, .oomph, h2 {
 .btn-success {
   background-color: #37abc8;
   border-color: #3097b0;
+  background-color: rgb(60, 60, 60);
+  border-color: rgb(50, 50, 50);
+  color: white;
 }
 
 .btn-success:hover, .btn-success:active, .btn-success:focus {
   background-color: #3097b0;
   border-color: #3097b0;
+  background-color: rgb(50, 50, 50);
+  border-color: rgb(50, 50, 50);
 }
 
 #start {
@@ -68,28 +73,33 @@ a, .oomph, h2 {
   padding: 60px 0;
 }
 
-#start .btn-success {
-  background-color: rgb(50, 50, 50);
-  border-color: rgba(255,255,255,0.1);
-  color: white;
-}
-
 #copy {
   padding-top: 40px;
 }
 
-#prices th.active {
-  background-color: #ffcd01;
+td.price {
+  font-size: 22px;
+}
+
+#sign-up {
+  background-color: #37abc8;
   color: white;
 }
 
-#prices td.active {
-  color: #ffcd01;
-  background-color: transparent;
+#sign-up h2 {
+  color: inherit;
 }
 
-td.price {
-  font-size: 22px;
+#sign-up a {
+  color: white;
+}
+
+#nudge-nudge-wink-wink {
+  font-size: 16px;
+}
+
+#faq h4 {
+  font-weight: bold;
 }
 
 footer {
@@ -115,7 +125,7 @@ footer ul {
   text-align: center;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 770px) {
   #top-menu .nav.navbar-nav {
     display: none;
   }
