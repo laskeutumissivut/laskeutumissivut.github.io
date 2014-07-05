@@ -28,10 +28,6 @@ h4, .h4 { font-size: 24px; }
   background-color: #3097b0;
 }
 
-section:nth-child(even) {
-  background-color: rgb(253, 253, 253);
-}
-
 a, .oomph, h2 {
   color: #37abc8;
 }
